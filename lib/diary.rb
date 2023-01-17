@@ -1,5 +1,5 @@
 class Diary
   def make_snippet(text)
-    "This is a really simple..."
+    text.split(" ").slice(0, 5).join(" ") + "..."
   end
 end
