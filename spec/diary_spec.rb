@@ -11,8 +11,13 @@ RSpec.describe Diary do
     end
 
     it "should return the string itself without modification if the input.length <= 5" do
-      expect(@diary.make_snippet("This is a really test.")).to eq "This is a really test."
+      expect(@diary.make_snippet("This is a simple test.")).to eq "This is a simple test."
     end
   end
 
+  context ".count_words" do
+    it "should return the number of words in the input" do
+      expect(@diary.count_words("This is a simple test.")).to eq 5
+    end
+  end
 end

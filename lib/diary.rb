@@ -7,4 +7,8 @@ class Diary
       text
     end
   end
+
+  def count_words(text)
+    text.split(" ").length
+  end
 end
